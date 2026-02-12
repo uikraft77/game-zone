@@ -7,13 +7,13 @@ import { useAuth } from './context/AuthContext';
 
 // Screen imports
 import SplashScreen from './screens/SplashScreen';
+import Login from './screens/Login';
 import UserDashboard from './screens/user/UserDashboard';
 import AstrologersListing from './screens/user/AstrologersListing';
 import AstrologerDashboard from './screens/astrologer/AstrologerDashboard';
 import AdminDashboard from './screens/admin/AdminDashboard';
 
 // Placeholder components for future development
-const LoginScreen = () => <div>Login Screen</div>;
 const SignupScreen = () => <div>Signup Screen</div>;
 const NotFound = () => <div>404 - Not Found</div>;
 
@@ -45,7 +45,7 @@ function App() {
                 <Route path="/splash" element={<SplashScreen />} />
 
                 {/* Public Routes */}
-                <Route path="/login" element={<LoginScreen />} />
+                <Route path="/login" element={<Login />} />
                 <Route path="/signup" element={<SignupScreen />} />
 
                 {/* User Routes */}
