@@ -159,12 +159,13 @@ export const fontSizes = {
   },
 };
 
-// Font Families
+// Font Families - Updated for Splash Screen
 export const fontFamilies = {
-  primary: 'Poppins, sans-serif',
-  secondary: 'Inter, sans-serif',
+  display: 'Space Grotesk, sans-serif', // For headings and titles
+  body: 'Noto Sans, sans-serif', // For body text
+  primary: 'Space Grotesk, sans-serif',
+  secondary: 'Noto Sans, sans-serif',
   mono: 'Courier New, monospace',
-  display: 'Montserrat, sans-serif',
 };
 
 // Font Weight Constants

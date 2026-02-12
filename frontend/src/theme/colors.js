@@ -1,9 +1,9 @@
 // Color Palette - Gaming Theme with Dark Background
 export const colors = {
-  // Primary Colors
-  primary: '#FF6B35', // Vibrant Orange
-  primaryLight: '#FF8C5A',
-  primaryDark: '#E85A2E',
+  // Primary Colors - Updated to match splash screen
+  primary: '#ee2bee', // Mystical Pink/Magenta
+  primaryLight: '#FF5BC4',
+  primaryDark: '#D41BA8',
 
   // Secondary Colors
   secondary: '#00D9FF', // Cyan
@@ -24,31 +24,31 @@ export const colors = {
   warning: '#FFB703', // Orange for warning
   info: '#3A86FF', // Blue for info
 
-  // Background Colors - Dark theme
-  background: '#0A0E27', // Very dark navy/purple
-  surface: '#1A1F3A', // Dark purple surface
-  surfaceLight: '#242B48', // Lighter surface
-  surfaceLighter: '#2D3548', // Even lighter surface
+  // Background Colors - Dark theme - Updated for cosmic gradient
+  background: '#221022', // Very dark purple/background-dark
+  surface: '#2d1b2d', // Dark purple surface
+  surfaceLight: '#3d2b3d', // Lighter surface
+  surfaceLighter: '#4d3b4d', // Even lighter surface
 
   // Text Colors
   textPrimary: '#FFFFFF', // White
   textSecondary: '#B0B5C4', // Light gray
   textTertiary: '#8B90A8', // Medium gray
   textDisabled: '#5A6070', // Dark gray
-  textInverse: '#0A0E27', // Dark background on light
+  textInverse: '#221022', // Dark background on light
 
   // Border Colors
   border: '#3A4658', // Dark border
   borderLight: '#4A5668', // Light border
   divider: '#2D3548', // Divider color
 
-  // Gradient Colors
-  gradientStart: '#1A0033', // Dark purple
-  gradientMid: '#330066', // Medium purple
-  gradientEnd: '#0A0E27', // Dark navy
+  // Gradient Colors - Cosmic gradient
+  gradientStart: '#581c58', // Light purple top
+  gradientMid: '#221022', // Dark purple mid
+  gradientEnd: '#150a15', // Very dark purple bottom
 
   // Card Colors
-  cardBackground: '#1A1F3A',
+  cardBackground: '#2d1b2d',
   cardBorder: '#3A4658',
 
   // Special States
@@ -57,13 +57,13 @@ export const colors = {
   highlightNumber: '#FFD700', // Gold highlight
 
   // Overlay Colors
-  overlay: 'rgba(10, 14, 39, 0.8)',
-  overlayDark: 'rgba(10, 14, 39, 0.95)',
-  overlayLight: 'rgba(10, 14, 39, 0.5)',
+  overlay: 'rgba(34, 16, 34, 0.8)',
+  overlayDark: 'rgba(34, 16, 34, 0.95)',
+  overlayLight: 'rgba(34, 16, 34, 0.5)',
 
   // Rainbow Multi Colors
   rainbow: [
-    '#FF6B35', // Orange
+    '#ee2bee', // Primary magenta
     '#FF1493', // Pink
     '#9D4EDD', // Purple
     '#3A86FF', // Blue

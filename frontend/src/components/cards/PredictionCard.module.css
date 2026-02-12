@@ -1,0 +1,193 @@
+/* PredictionCard Styles */
+.card {
+  background: var(--surface-dark);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  margin-bottom: 16px;
+}
+
+.card.passed {
+  border-color: #00FF88;
+  box-shadow: 0 0 15px rgba(0, 255, 136, 0.15);
+}
+
+.card.failed {
+  border-color: #FF1F1F;
+  box-shadow: 0 0 15px rgba(255, 31, 31, 0.15);
+}
+
+.header {
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.profileImage {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.headerInfo {
+  flex: 1;
+}
+
+.name {
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+}
+
+.gameName {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 2px;
+}
+
+.badges {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  font-size: 10px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.ratingBadge {
+  background: rgba(255, 215, 0, 0.2);
+  color: #FFD700;
+}
+
+.subscribedBadge {
+  background: rgba(238, 43, 238, 0.2);
+  color: var(--primary);
+}
+
+.content {
+  padding: 16px;
+}
+
+.numbersSection {
+  margin-bottom: 16px;
+}
+
+.sectionTitle {
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.numbers {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.number {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.number.matched {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: white;
+}
+
+.resultNumber {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-weight: 700;
+  background: rgba(255, 215, 0, 0.2);
+  border: 1px solid #FFD700;
+  color: #FFD700;
+}
+
+.status {
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.statusPassed {
+  background: rgba(0, 255, 136, 0.1);
+  color: #00FF88;
+}
+
+.statusFailed {
+  background: rgba(255, 31, 31, 0.1);
+  color: #FF1F1F;
+}
+
+.statusPending {
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.button {
+  flex: 1;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 12px;
+  transition: all 0.3s ease;
+}
+
+.primaryButton {
+  background: var(--primary);
+  color: white;
+}
+
+.primaryButton:hover {
+  background: #d41ba8;
+}
+
+.secondaryButton {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.secondaryButton:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.smallButton {
+  padding: 6px 10px;
+  font-size: 11px;
+}

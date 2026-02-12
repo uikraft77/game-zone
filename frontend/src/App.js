@@ -6,6 +6,7 @@ import { UserDataProvider } from './context/UserDataContext';
 import { useAuth } from './context/AuthContext';
 
 // Screen imports
+import SplashScreen from './screens/SplashScreen';
 import UserDashboard from './screens/user/UserDashboard';
 import AstrologersListing from './screens/user/AstrologersListing';
 import AstrologerDashboard from './screens/astrologer/AstrologerDashboard';
@@ -34,12 +35,15 @@ const ProtectedRoute = ({ children, requiredUserType }) => {
 // Main App Component
 function App() {
   return (
-    <LanguageProvider defaultLanguage="en">
-      <AuthProvider>
-        <UserDataProvider>
-          <Router>
+    <Router>
+      <LanguageProvider defaultLanguage="en">
+        <AuthProvider>
+          <UserDataProvider>
             <div className="app">
               <Routes>
+                {/* Splash Screen */}
+                <Route path="/splash" element={<SplashScreen />} />
+
                 {/* Public Routes */}
                 <Route path="/login" element={<LoginScreen />} />
                 <Route path="/signup" element={<SignupScreen />} />
@@ -83,14 +87,14 @@ function App() {
                 />
 
                 {/* Fallback Route */}
-                <Route path="/" element={<Navigate to="/user/dashboard" replace />} />
+                <Route path="/" element={<Navigate to="/splash" replace />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </div>
-          </Router>
-        </UserDataProvider>
-      </AuthProvider>
-    </LanguageProvider>
+          </UserDataProvider>
+        </AuthProvider>
+      </LanguageProvider>
+    </Router>
   );
 }
 

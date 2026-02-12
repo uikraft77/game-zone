@@ -1,0 +1,96 @@
+/* GameResultCard Styles */
+.card {
+  background: var(--surface-dark);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.date {
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+}
+
+.viewButton {
+  background: transparent;
+  border: 1px solid rgba(238, 43, 238, 0.5);
+  color: var(--primary);
+  padding: 6px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.viewButton:hover {
+  background: var(--primary);
+  color: white;
+}
+
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.box {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.box:hover {
+  border-color: var(--primary);
+  background: rgba(238, 43, 238, 0.05);
+}
+
+.boxTime {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.boxLabel {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 8px;
+}
+
+.boxResult {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.boxStatus {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 8px;
+}
+
+.statusWaiting {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.statusPassed {
+  color: #00FF88;
+}
+
+.statusFailed {
+  color: #FF1F1F;
+}

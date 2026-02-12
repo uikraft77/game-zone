@@ -10,12 +10,17 @@ html, body, #root {
   height: 100%;
 }
 
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
+
 body {
-  font-family: 'Poppins', 'Inter', sans-serif;
-  background: linear-gradient(135deg, #1a0033, #330066, #0a0e27);
+  font-family: 'Space Grotesk', 'Noto Sans', sans-serif;
+  background: radial-gradient(circle at 50% 0%, #581c58 0%, #221022 60%, #150a15 100%);
   color: #ffffff;
   line-height: 1.5;
   overflow-x: hidden;
+  min-height: 100vh;
 }
 
 /* Typography */

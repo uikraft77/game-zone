@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styles from './PredictionCard.module.css';
-import { theme } from '../theme/theme';
+import { colors } from '../../theme/colors';
 
 /**
  * PredictionCard Component
@@ -59,12 +59,12 @@ const PredictionCard = ({
         </div>
 
         {isPassed && (
-          <div className={styles.badge} style={{ color: theme.colors.success }}>
+          <div className={styles.badge} style={{ color: colors.success }}>
             ✓ Passed
           </div>
         )}
         {isFailed && (
-          <div className={styles.badge} style={{ color: theme.colors.error }}>
+          <div className={styles.badge} style={{ color: colors.error }}>
             ✗ Failed
           </div>
         )}
@@ -87,8 +87,8 @@ const PredictionCard = ({
               style={
                 item.isMatch
                   ? {
-                      backgroundColor: theme.colors.highlightNumber,
-                      color: theme.colors.textInverse,
+                      backgroundColor: colors.highlightNumber,
+                      color: colors.textInverse,
                     }
                   : {}
               }

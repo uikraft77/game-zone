@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from './GameResultCard.module.css';
-import { theme } from '../theme/theme';
+import { colors } from '../../theme/colors';
 
 /**
  * GameResultCard Component
@@ -33,9 +33,9 @@ const GameResultCard = ({ date, results = [], onViewFullMonth }) => {
   const getStatusStyle = (status) => {
     switch (status) {
       case 'announced':
-        return { borderColor: theme.colors.accent1 };
+        return { borderColor: colors.accent1 };
       case 'waiting':
-        return { borderColor: theme.colors.border };
+        return { borderColor: colors.border };
       default:
         return {};
     }
